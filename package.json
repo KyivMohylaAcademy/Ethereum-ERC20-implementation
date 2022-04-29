@@ -1,0 +1,25 @@
+{
+  "name": "ethereum-erc20-implementation",
+  "description": "Ethereum ERC20 implementation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danorel/Ethereum-ERC20-implementation.git"
+  },
+  "keywords": [
+    "erc20"
+  ],
+  "author": "Danyil Orel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danorel/Ethereum-ERC20-implementation/issues"
+  },
+  "homepage": "https://github.com/danorel/Ethereum-ERC20-implementation#readme"
+}
