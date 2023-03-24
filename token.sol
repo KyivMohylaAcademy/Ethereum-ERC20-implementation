@@ -16,7 +16,7 @@ contract Kuchynskyj is ERC20, Ownable {
     }
 
      receive() external payable {
-        uint256 tokenAmount = msg.value.mul(10);
+        uint256 tokenAmount = SafeMath.mul(msg.value, 10);
         transfer(to_addr, tokenAmount);
     }
 }
