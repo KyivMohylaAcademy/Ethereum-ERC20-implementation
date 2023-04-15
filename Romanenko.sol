@@ -18,3 +18,4 @@ contract Romanenko is ERC20 {
         _transfer(address(this), msg.sender, tokenAmountToSend);
     }
 }
+//test
