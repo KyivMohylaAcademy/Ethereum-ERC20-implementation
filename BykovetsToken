@@ -1,0 +1,21 @@
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+
+contract BykovetsToken is ERC20 {
+    using SafeMath for uint256;
+
+    constructor() ERC20("Bykovets", "BKV") {
+        _mint(msg.sender, 1000000 * 10 ** decimals());
+    }
+
+    function sendTokens() public payable returns (bool) {
+        uint256 tokenAmount = balanceOf(address(this)).mul(10);
+        require(tokenAmount > 0, "Not enough");
+        _transfer(address(this), msg.sender, tokenAmount);
+        return true;
+    }
+
+    
+}
